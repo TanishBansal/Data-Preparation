@@ -1,0 +1,7 @@
+import os
+directory = r"Enter Directory Here"
+test = os.listdir( directory )
+
+for item in test:
+    if item.endswith(".xml"):
+        os.remove( os.path.join( directory, item ) )
